@@ -223,7 +223,7 @@ class AbstractVideoManager extends PureComponent<Props> {
      * @returns {void}
      */
     onPlay() {
-        this.smartAudioMute();
+        //this.smartAudioMute();
         sendAnalytics(createEvent('play'));
         this.fireUpdateSharedVideoEvent();
     }
@@ -247,9 +247,9 @@ class AbstractVideoManager extends PureComponent<Props> {
         const volume = this.getVolume();
         const muted = this.isMuted();
 
-        if (volume > 0 && !muted) {
+        /*if (volume > 0 && !muted) {
             this.smartAudioMute();
-        }
+        }*/
 
         sendAnalytics(createEvent(
             'volume.changed',
@@ -325,7 +325,7 @@ class AbstractVideoManager extends PureComponent<Props> {
      *
      * @returns {void}
      */
-    smartAudioMute() {
+    /*smartAudioMute() {
         const { _isLocalAudioMuted, _muteLocal } = this.props;
 
         if (!_isLocalAudioMuted
@@ -333,7 +333,7 @@ class AbstractVideoManager extends PureComponent<Props> {
             sendAnalytics(createEvent('audio.muted'));
             _muteLocal(true);
         }
-    }
+    }*/
 
     /**
      * Seeks video to provided time.
