@@ -7,7 +7,7 @@ import logger from '../../../logger';
 import AudioSettingsEntry from './AudioSettingsEntry';
 import TestButton from './TestButton';
 
-const TEST_SOUND_PATH = 'sounds/ring.mp3';
+const TEST_SOUND_PATH = 'sounds/ring.wav';
 
 /**
  * The type of the React {@code Component} props of {@link SpeakerEntry}.

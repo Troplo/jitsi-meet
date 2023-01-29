@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import { translate } from '../../base/i18n/functions';
 import Audio from '../../base/media/components/Audio';
 
-const TEST_SOUND_PATH = 'sounds/ring.mp3';
+const TEST_SOUND_PATH = 'sounds/ring.wav';
 
 /**
  * The type of the React {@code Component} props of {@link AudioOutputPreview}.
